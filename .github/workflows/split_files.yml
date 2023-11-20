@@ -1,0 +1,17 @@
+name: Split txt files
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  split_txt_files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Split txt files
+        run: |
+          python split_txt_file.py
