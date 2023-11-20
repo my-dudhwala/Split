@@ -14,4 +14,4 @@ jobs:
 
       - name: Split txt files
         run: |
-          python split_txt_file.py
+          python split.py
